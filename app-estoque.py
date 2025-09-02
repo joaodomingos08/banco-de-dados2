@@ -12,7 +12,7 @@ class Produto:
         self.categoria = categoria
         self.quantidade = quantidade
         self.preco = preco
-        self.fornecedor = fornecedor
+        self.fornecedor = fornecedorhttps://www.onlinegdb.com/fork/EXaaeThoK#editor_1
 
     # Método converte o objeto Produto em dicionário (usado para exportação em JSON)
     def to_dict(self):
@@ -95,3 +95,9 @@ produtos = [
 # ➕ Adiciona novos produtos à lista existente
 produtos.append(Produto(4, "Marcador", "Papelaria", 80, 4.75, "Pilot"))
 produtos.append(Produto(5, "Grampeador", "Escritório", 30, 22.40, "Tramontina"))
+# 🔎 Função para listar produtos com preço acima de R$10
+def listar_produtos_acima_de_10():
+    print("\n💰 Produtos com preço acima de R$10:")
+    for produto in produtos:
+        if produto.preco > 10:
+            print(produto)
