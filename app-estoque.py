@@ -85,3 +85,13 @@ for row in cursor.fetchall():
 
 # 🔒 Encerra a conexão com o banco
 conn.close()
+# 🛒 Cria uma lista inicial de produtos
+produtos = [
+    Produto(1, "Caneta", "Papelaria", 100, 2.50, "OfficeMax"),
+    Produto(2, "Caderno", "Papelaria", 50, 15.90, "Faber"),
+    Produto(3, "Borracha", "Papelaria", 200, 1.20, "Mercur")
+]
+
+# ➕ Adiciona novos produtos à lista existente
+produtos.append(Produto(4, "Marcador", "Papelaria", 80, 4.75, "Pilot"))
+produtos.append(Produto(5, "Grampeador", "Escritório", 30, 22.40, "Tramontina"))
